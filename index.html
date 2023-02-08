@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lengua.io</title>
+  </head>
+  <body>
+    <h1>Lengua.io</h1>
+    <p>Created by Ali Zia (az2741@columbia.edu) and Chris Tengey (cdt50@georgetown.edu)</p>
+    <p>This website uses NLP to help language learners find new words. You can read an article about it here.</p>
+    <p>Looking for words similar to one you already know? Type the word in English and press the search button below.</p>
+    <form method="post">
+      <p>Pick a language:</p>
+      <select name="language">
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+      </select>
+      <p>Find some words related to...</p>
+      <input type="text" name="searchedWord" required>
+      <input type="submit" value="Search">
+    </form>
+    {% if similar_words %}
+    <p>Results:</p>
+    <ul>
+     
